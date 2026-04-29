@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vasabi — Web Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Code Rain Background -->
+  <div id="code-bg"></div>
+
+  <!-- ──────────── NAVBAR ──────────── -->
+  <nav class="navbar navbar-expand-lg" id="mainNav">
+    <div class="container">
+
+      <a class="navbar-brand" href="#home" style="font-size:30px;font-weight:700;filter:drop-shadow(5px 2px 0px blue);" >
+        Vasabi<i class="fa-brands fa-rebel fa-xs"></i>
+      </a>
+
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navContent"
+              aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navContent">
+        <ul class="navbar-nav gap-1">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- ──────────── HERO ──────────── -->
+  <section id="home">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- Left: Text -->
+        <div class="col-lg-6 col-12">
+          <div class="fade-up">
+            <div class="hero-tag">AVAILABLE FOR WORK</div>
+          </div>
+          <div class="fade-up">
+            <h1 class="hero-name">
+              I'm<br>
+              <span class="accent-line">Vasabi</span>
+            </h1>
+          </div>
+          <div class="fade-up">
+            <p class="hero-role">
+              <span id="typed-text" style="font-size: 25px;">Full-Stack Web Developer</span><span class="typed-cursor">|</span>
+            </p>
+          </div>
+          <div class="fade-up">
+            <p class="hero-desc">
+              Building high-quality websites, mobile apps &amp; desktop applications
+              with 2+ years of hands-on experience across the full stack.
+            </p>
+          </div>
+          <div class="fade-up hero-actions">
+                <a href="Chhem_Visal_CV.pdf" download class="btn-primary-custom" id="downloadBtn">
+                    <span class="btn-text">
+                      <i class="fa-solid fa-download"></i> Download CV
+                    </span>
+                    <span class="btn-loader d-none">
+                      <i class="fa-solid fa-spinner fa-spin"></i> Downloading...
+                    </span>
+                    <span class="btn-done d-none">
+                      <i class="fa-solid fa-check"></i> Done
+                    </span>
+            </a>
+            <div class="social-row">
+              <a href="https://www.facebook.com/share/18TYwUTAzs/?mibextid=wwXIfr" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://t.me/VISAL_CHHEM" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+              <a href="https://github.com/vasabi2230" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.tiktok.com/@vasabii43?_r=1&_t=ZS-95wElJhHW0C" aria-label="Tiktok"><i class="bi bi-tiktok"></i></a>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Image -->
+        <div class="col-lg-6 col-12 hero-img-wrap fade-up">
+          <div class="hero-img-ring">
+            <img src="image/profile-pic.png" alt="Vasabi portrait" />
+            <div class="stat-badge years">
+              <span class="num">2+</span>
+              <span class="lbl">Years Exp.</span>
+            </div>
+            <div class="stat-badge projects">
+              <span class="num">5+</span>
+              <span class="lbl">Projects</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ──────────── ABOUT ──────────── -->
+  <section id="about">
+    <div class="container">
+      <div class="row align-items-center g-5">
+
+        <!-- Flip Card -->
+        <div class="col-lg-5 col-12 fade-up">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="image/me-pic.jpg" alt="Vasabi" />
+              </div>
+              <div class="flip-card-back">
+                <img src="image/me-pic2.jpg" alt="Vasabi alternate" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="col-lg-7 col-12 fade-up">
+          <h1 class="section-label" style="font-size: 30px;">About Me</h1>
+          <h2 class="section-title">Passionate<br>Developer &amp; Learner</h2>
+
+          <p class="about-text">
+            I am a passionate IT student with a strong interest in programming and web development.
+            I work with HTML, CSS, JavaScript, PHP, SQL, and Laravel — building projects that span
+            both frontend and backend to sharpen real-world problem-solving.
+          </p>
+
+          <div class="hidden-text" id="extra-about">
+            <p class="about-text" style="margin-top:14px;">
+              A self-motivated learner who explores AI, modern web development, and emerging tools
+              independently. Currently in my second year at RUPP, I've also gained practical experience
+              as a barista and in system-related work at a company — developing communication,
+              teamwork, and professional skills alongside my code.
+            </p>
+            <p class="about-text" style="margin-top:14px;">
+              My goal is to become a skilled developer who contributes to innovative, meaningful projects.
+            </p>
+          </div>
+
+          <button class="read-more-btn" id="readMoreBtn">Read more →</button>
+
+          <div class="skill-chips">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">PHP</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Laravel</span>
+            <span class="chip">Bootstrap</span>
+            <span class="chip">UI/UX</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ──────────── SKILLS ──────────── -->
+  <section id="skills">
+    <div class="container">
+
+      <div class="row align-items-center g-5">
+
+        <!-- Left: Label + Title + Intro -->
+        <div class="col-lg-5 col-12 fade-up">
+          <h1 class="section-label" style="font-size: 30px;">Expertist</h1>
+          <h2 class="section-title">My Tech<br>Stack &amp; Skills</h2>
+          <p class="about-text">
+            A snapshot of my technical proficiency across the stack — from crafting
+            interfaces to building backends and exploring AI.
+          </p>
+          <div class="skills-legend">
+            <span class="legend-item"><span class="legend-dot"></span>Proficiency Level</span>
+          </div>
+        </div>
+
+        <!-- Right: Skill Bars -->
+        <div class="col-lg-7 col-12 fade-up">
+          <div class="skill-bars">
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-name"><i class="fa-brands fa-html5"></i> HTML</span>
+                <span class="skill-pct" data-target="80">0%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-name"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                <span class="skill-pct" data-target="70">0%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="70"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-name"><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span class="skill-pct" data-target="50">0%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="50"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-name"><i class="fa-brands fa-php"></i> PHP</span>
+                <span class="skill-pct" data-target="50">0%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="50"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-name"><i class="fa-solid fa-fire"></i> Laravel</span>
+                <span class="skill-pct" data-target="70">0%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="70"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-name"><i class="fa-solid fa-microchip"></i> AI</span>
+                <span class="skill-pct" data-target="100">0%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill ai-fill" data-width="100"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ──────────── PORTFOLIO ──────────── -->
+  <section id="portfolio">
+    <div class="container">
+      <h1 class="section-label fade-up" style="font-size: 30px;">My Work</h1>
+      <h2 class="section-title fade-up">Selected<br>Projects</h2>
+
+      <div class="portfolio-grid">
+
+        <div class="portfolio-card fade-up">
+          <div class="card-thumb">🛒</div>
+          <div class="card-body-custom">
+            <p class="card-num">01 —</p>
+            <h3 class="card-title-custom">E-Commerce System</h3>
+            <p class="card-desc">Full-stack online store with cart, auth, and admin dashboard built with Laravel + MySQL.</p>
+            <div class="card-tags">
+              <span class="tag">Laravel</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card fade-up">
+          <div class="card-thumb">📋</div>
+          <div class="card-body-custom">
+            <p class="card-num">02 —</p>
+            <h3 class="card-title-custom">Task Management App</h3>
+            <p class="card-desc">Kanban-style task tracker with drag-and-drop, user roles, and real-time updates.</p>
+            <div class="card-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">PHP</span>
+              <span class="tag">SQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card fade-up">
+          <div class="card-thumb">🌐</div>
+          <div class="card-body-custom">
+            <p class="card-num">03 —</p>
+            <h3 class="card-title-custom">Company Profile Site</h3>
+            <p class="card-desc">Responsive marketing site with smooth animations and CMS-powered content management.</p>
+            <div class="card-tags">
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Laravel</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="coming-soon fade-up">
+        <i class="fa-solid fa-code-branch"></i>
+        More projects coming soon — stay tuned
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ──────────── CONTACT ──────────── -->
+  <section id="contact">
+    <div class="container">
+
+      <div class="contact-card fade-up">
+        <p class="section-label" style="display:flex;justify-content:center;">InBox</p>
+        <h2>Let's Work Together</h2>
+        <p>Have a project in mind or just want to say hello? My inbox is always open.</p>
+        <a href="https://t.me/VISAL_CHHEM" class="btn-primary-custom">
+          <i class="fa-solid fa-paper-plane"></i> Send a Message
+        </a>
+      </div>
+
+      <div class="footer-bar fade-up">
+        <p>© 2026 Vasabi. All rights reserved.</p>
+        <div class="social-row">
+          <a href="https://www.facebook.com/share/18TYwUTAzs/?mibextid=wwXIfr" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://t.me/VISAL_CHHEM" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+              <a href="https://github.com/vasabi2230" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.tiktok.com/@vasabii43?_r=1&_t=ZS-95wElJhHW0C" aria-label="Tiktok"><i class="bi bi-tiktok"></i></a>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Scroll To Top Button -->
+  <button id="scrollTop" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="main.js"></script>
+
+</body>
+</html>
